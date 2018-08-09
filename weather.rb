@@ -37,7 +37,7 @@ def convert_temp(weather)
   x = weather[:temperature_farenheit] - 32
   celsius = x * (5.0/9.0)
   celsius_rounded = celsius.round(2)
-  return "#{celsius_rounded}"
+  return celsius_rounded
 end
 convert_temp(weather)
 # Hint - how can we find the algorithm to convert Farenheit to Celsius?
